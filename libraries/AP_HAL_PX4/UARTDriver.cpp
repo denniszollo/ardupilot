@@ -177,7 +177,10 @@ void PX4UARTDriver::begin(uint32_t b)
 	begin(b, 0, 0);
 }
 
-
+int PX4UARTDriver::get_rx_buffer()
+{
+  return _readbuf_size;
+}	
 /*
   try to initialise the UART. This is used to cope with the way NuttX
   handles /dev/ttyACM0 (the USB port). The port appears in /dev on

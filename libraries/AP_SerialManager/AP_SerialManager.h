@@ -54,7 +54,7 @@
 // GPS default baud rates and buffer sizes
 // we need a 256 byte buffer for some GPS types (eg. UBLOX)
 #define AP_SERIALMANAGER_GPS_BAUD               38400
-#define AP_SERIALMANAGER_GPS_BUFSIZE_RX         256
+#define AP_SERIALMANAGER_GPS_BUFSIZE_RX         2048 
 #define AP_SERIALMANAGER_GPS_BUFSIZE_TX         16
 
 // AlexMos Gimbal protocol default baud rates and buffer sizes

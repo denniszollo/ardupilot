@@ -21,7 +21,7 @@ public:
     int16_t available();
     int16_t txspace();
     int16_t read();
-
+    int get_rx_buffer();
     /* PX4 implementations of Print virtual methods */
     size_t write(uint8_t c);
     size_t write(const uint8_t *buffer, size_t size);

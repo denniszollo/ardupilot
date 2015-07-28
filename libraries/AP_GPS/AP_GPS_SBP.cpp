@@ -60,11 +60,10 @@ AP_GPS_SBP::AP_GPS_SBP(AP_GPS &_gps, AP_GPS::GPS_State &_state,
     last_full_update_cpu_ms(0),
     crc_error_counter(0)
 {
-
+    port->begin(115200,2048,2048);
     Debug("SBP Driver Initialized");
-
+    Debug("receive buffer is %i", port->get_rx_buffer());
     parser_state.state = sbp_parser_state_t::WAITING;
-
     //Externally visible state
     state.status = AP_GPS::NO_FIX;
     state.have_vertical_velocity = true;
