@@ -37,7 +37,7 @@
 #else
 # define AP_SERIALMANAGER_CONSOLE_BAUD          115200
 #endif
-# define AP_SERIALMANAGER_CONSOLE_BUFSIZE_RX    128
+# define AP_SERIALMANAGER_CONSOLE_BUFSIZE_RX    2048
 # define AP_SERIALMANAGER_CONSOLE_BUFSIZE_TX    512
 
 // mavlink default baud rates and buffer sizes
